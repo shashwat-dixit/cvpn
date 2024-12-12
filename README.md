@@ -14,32 +14,40 @@ Command Line VPN built with Go and featuring AWS integration and a modern text-b
 ## Installation
 
 ```bash
-go install github.com/yourusername/vpn-cli@latest
+go install github.com/shashwat-dixit/cvpn@latest
 ```
 
 Or build from source:
 
 ```bash
-git clone https://github.com/yourusername/vpn-cli.git
+git clone https://github.com/shashwat-dixit/cvpn.git
 cd vpn-cli
-go build ./cmd/vpncli
+go build ./cmd/cli-app
+```
+
+### To setup docs locally
+```bash
+git clone https://github.com/shashwat-dixit/cvpn.git
+cd cvpn/cvpn-docs
+npm install
+npm run dev
 ```
 
 ## Quick Start
 
 1. Configure AWS credentials:
 ```bash
-vpncli configure
+cvpn configure
 ```
 
 2. Create a new VPN instance:
 ```bash
-vpncli create
+cvpn create
 ```
 
 3. Connect to your VPN:
 ```bash
-vpncli connect
+cvpn connect
 ```
 
 ## Usage
@@ -58,9 +66,9 @@ Common operations:
 The CLI supports several configuration options through environment variables or config files:
 
 ```bash
-VPNCLI_AWS_REGION=us-west-2      # Default AWS region
-VPNCLI_CONFIG_PATH=~/.vpncli     # Configuration directory
-VPNCLI_LOG_LEVEL=info           # Logging level
+CVPN_AWS_REGION=us-west-2      # Default AWS region
+CVPN_CONFIG_PATH=~/.vpncli     # Configuration directory
+CVPN_LOG_LEVEL=info           # Logging level
 ```
 
 ## Documentation
@@ -69,7 +77,7 @@ Complete documentation is available in two formats:
 
 1. Built-in CLI documentation:
 ```bash
-vpncli help
+cvpn help
 ```
 
 2. Comprehensive web documentation at [docs coming soon]()
@@ -106,10 +114,3 @@ The application is built using several powerful Go libraries:
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Support
-
-- 📚 Refer to our [Documentation](https://docs.yourdomain.com) for detailed guides
-- 🐛 Report bugs via [GitHub Issues](https://github.com/yourusername/vpn-cli/issues)
-- 💡 Feature requests are welcome
-- 📧 Professional support: support@shashwatdixit.dev
