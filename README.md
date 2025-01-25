@@ -2,6 +2,13 @@
 
 Command Line VPN built with Go and featuring AWS integration and a modern text-based user interface.
 
+## Project ToDo
+- [ ] Make it into a hybrind of Pritunl & Proton
+- [ ] Make three tiers of service - free, personal and business
+- [ ] Config based setup - remove any friction for the business or personal tier
+- [ ] Make a good documentation website
+- [ ] Integrate a payment provider
+
 ## Features
 
 - 🔐 Secure AWS credentials management with local encryption
